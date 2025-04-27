@@ -1,4 +1,14 @@
-# QChatServer
+# QChatServer 目录结构
+- **ChatServer/**
+  - 主要负责聊天消息的处理与转发。
+- **ChatServer2/**
+  - 第二聊天服务器实例，承担聊天分流。
+- **GateServer/**
+  - 客户端连接入口，负责接收和分发初始请求。
+- **StatusServer/**
+  - 监控服务器运行状态，负责均衡聊天服务器负载。
+- **VarifyServer/**
+  - 验证服务器，处理用户注册、权限校验等功能。
 通讯软件服务器端，c++实现
 整体逻辑如下：
 ![image](picture/架构图.png)
